@@ -1,22 +1,3 @@
----
-order: 1000
-type: example
-summary: Shows how to restrict access using the HTTP "Basic" schema.
-tags:
-  - Security
-  - Originless
----
-
-# HTTP "Basic" Authentication
-
-<ContentColumn>
-  <p>{props.frontmatter.summary}</p>
-</ContentColumn>
-
-The browser will prompt for credentials when accessing the "/admin" route.
-The "/logout" route will invalidate the "Authorization" header.
-
-```js
 /**
  * Shows how to restrict access using the HTTP "Basic" schema.
  * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication
@@ -203,5 +184,3 @@ addEventListener('fetch',function(event) {
   
   event.respondWith(response)
 })
-
-```

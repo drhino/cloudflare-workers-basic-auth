@@ -1,0 +1,11 @@
+name = "basic-auth"
+type = "javascript"
+workers_dev = true
+usage_model = "bundled"
+ account_id = "***HIDDEN***"
+
+[build]
+upload.format = "service-worker"
+
+[dev]
+ip = "***HIDDEN***"
